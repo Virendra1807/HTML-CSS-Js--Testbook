@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog web</title>
+
+    <style>
+        .container {
+            display: flex;
+            padding: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .left-side,
+        .right-side {
+            border: 1px solid blue;
+            padding: 20px;
+            margin: 30px;
+            background-color: rgb(51, 220, 169);
+
+        }
+
+        /* Animation duration of 2 seconds */
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .left-side,
+        .right-side,
+        .center {
+            animation-name: slideIn;
+            animation-duration: 3s;
+            animation-fill-mode: backwards;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to Blogs</h1>
+
+    <div class="container">
+
+        <aside class="left-side">
+            <h4>Left Side</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium asperiores tempore quo, enim fugiat
+                aliquid suscipit iure fugit! Qui, amet.</p>
+        </aside>
+
+        <fieldset class="center">
+            <legend>Center Post</legend>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, modi! Cupiditate doloremque itaque
+                corrupti molestiae magnam? Et iste sit optio ex id ducimus cupiditate dolores. Perferendis magni neque
+                vel facilis?</p>
+        </fieldset>
+
+        <aside class="right-side">
+            <h4>Right Side</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic magni dolor voluptate voluptatem tempore
+                praesentium omnis, dolorum, ex, eos delectus sapiente ipsam laboriosam in molestiae amet consequuntur
+                iusto at maiores.</p>
+        </aside>
+    </div>
+</body>
+
+</html>
