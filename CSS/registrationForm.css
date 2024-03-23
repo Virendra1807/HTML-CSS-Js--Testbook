@@ -1,0 +1,71 @@
+
+
+form{
+    /* background-color: aqua; */
+    border: solid 2px;  
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    border-radius: 50px;
+    /* line-height: 5px; */
+    background-color: antiquewhite;
+    
+    
+}
+
+label, input, select{
+    /* display: block; */
+    margin-bottom: 20px;
+    
+}
+
+
+.button {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #3aff20;
+    border: 2px none;
+    border-radius: 10px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: orange;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+}
+
+
+@keyframes formAni{
+    from{
+        transform: translate(-100%);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+form{
+    animation-name: formAni;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes headingAni{
+    from{
+        transform: translateY(-200%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+h1{
+    animation-name: headingAni;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
