@@ -1,0 +1,18 @@
+*{
+    /* background-color: black; */
+    text-align: center;
+}
+
+button.btn1:hover, h1:hover{
+    background-color: aquamarine;
+}
+
+p::first-line{
+    color: red;
+}
+
+li{
+    list-style-type: square;
+}
+
+
