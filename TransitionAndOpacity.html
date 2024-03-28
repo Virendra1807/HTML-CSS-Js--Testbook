@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition and opacity</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            margin-left: 40px;
+            margin-top: 50px;
+
+        }
+
+        .trans {
+            background-color: aquamarine;
+            width: 500px;
+            height: 500px;
+            text-align: center;
+            opacity: 1;
+            transition: 2s;
+            cursor: pointer;
+        }
+
+        .trans:hover {
+            background-color: #f51afd;
+            opacity: 1;
+        }
+
+        span {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-shadow: 2px 2px 5px rebeccapurple;
+            font-size: 50px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="trans">
+        <span>Hover on Block</span>
+    </div>
+
+    <div class="trans">
+        <span>Hover on Block</span>
+    </div>
+
+    <div class="trans">
+        <span>Hover on Block</span>
+    </div>
+</body>
+
+</html>
