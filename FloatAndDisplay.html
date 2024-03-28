@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+
+    <style>
+        * {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .container {
+            background-color: rgb(223, 223, 223);
+            /* margin: 0px auto; */
+            padding: 10px;
+            padding-top: 0px;
+            border: 2px solid grey;
+            width: 50%;
+            overflow: hidden;
+            box-shadow: 3px 3px 2px 2px grey;
+            /* display: none; */
+            /* display: block; */
+            /* display: inline; */
+            position: absolute;
+            /* z-index: 1; */
+
+        }
+
+        .container>img {
+            width: 200px;
+            height: 250px;
+            border: 2px solid grey;
+            border-radius: 50%;
+            /* border-top-left-radius: 100%;
+            border-top-right-radius: 100%; */
+            float: left;
+            margin: 5px;
+            margin-right: 10px;
+            box-shadow: 3px 2px 2px 2px grey;
+
+        }
+
+        .container>h1 {
+            background-color: aqua;
+            text-align: center;
+            text-decoration: underline;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px grey;
+            box-shadow: 3px 3px 2px 2px grey;
+        }
+
+        .container>.floatProp {
+            clear: left;
+            text-indent: 2px;
+            padding: 5px;
+        }
+
+        .container>.text {
+            text-indent: 2cm;
+            margin-top: 90px;
+        }
+
+        .grid-container {
+            /* background-color: aquamarine; */
+            /* position: absolute; */
+            /* z-index: 1; */
+            border: 2px solid black;
+            float: right;
+            width: 700px;
+            height: 700px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            /* grid-column-gap: 2px; */
+            gap: 5px;
+
+        }
+
+        .grid-container div {
+            background-color: aquamarine;
+            height: auto;
+            padding: 50px;
+            /* border: 2px red solid; */
+            /* margin: 5px; */
+
+        }
+
+        .grid-container>.div1 {
+            grid-row-start: span 2;
+            /* grid-row-end: span 5; */
+            grid-column-start: span 3;
+            /* grid-column-end: 3; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Resume</h1>
+        <img src="https://images.unsplash.com/photo-1618001789159-ffffe6f96ef2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Z2VudGxlbWFufGVufDB8fDB8fHww"
+            alt="DP">
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero esse consectetur magni rerum
+            animi quidem alias itaque molestiae! Numquam consequatur cum molestias necessitatibus vero! Aperiam
+            recusandae assumenda eos quaerat ipsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            perspiciatis doloribus animi vero. Veritatis, fuga officia autem voluptates fugit id molestias porro
+            laudantium ratione sunt. Nostrum quisquam esse eius optio.?</p>
+        <p class="floatProp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero esse consectetur magni
+            rerum
+            animi quidem alias itaque molestiae! Numquam consequatur cum molestias necessitatibus vero! Aperiam
+            recusandae assumenda eos quaerat ipsa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            repellat molestiae soluta doloribus a? Eligendi obcaecati atque soluta quos architecto nostrum ea id
+            laboriosam quia sequi. Placeat impedit nostrum reprehenderit provident recusandae dolorem harum nisi quod.
+            Consectetur error consequuntur asperiores quasi voluptate adipisci, mollitia rem modi necessitatibus
+            repellat temporibus doloremque.</p>
+
+        <p class="floatProp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero esse consectetur magni
+            rerum
+            animi quidem alias itaque molestiae! Numquam consequatur cum molestias necessitatibus vero! Aperiam
+            recusandae assumenda eos quaerat ipsa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            repellat molestiae soluta doloribus a? Eligendi obcaecati atque soluta quos architecto nostrum ea id
+            laboriosam quia sequi. Placeat impedit nostrum reprehenderit provident recusandae dolorem harum nisi quod.
+            Consectetur error consequuntur asperiores quasi voluptate adipisci, mollitia rem modi necessitatibus
+            repellat temporibus doloremque.</p>
+
+        <p class="floatProp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero esse consectetur magni
+            rerum
+            animi quidem alias itaque molestiae! Numquam consequatur cum molestias necessitatibus vero! Aperiam
+            recusandae assumenda eos quaerat ipsa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            repellat molestiae soluta doloribus a? Eligendi obcaecati atque soluta quos architecto nostrum ea id
+            laboriosam quia sequi. Placeat impedit nostrum reprehenderit provident recusandae dolorem harum nisi quod.
+            Consectetur error consequuntur asperiores quasi voluptate adipisci, mollitia rem modi necessitatibus
+            repellat temporibus doloremque.</p>
+    </div>
+
+    <div class="grid-container">
+        <div class="div1">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <!-- <div>8</div> -->
+    </div>
+</body>
+
+</html>
