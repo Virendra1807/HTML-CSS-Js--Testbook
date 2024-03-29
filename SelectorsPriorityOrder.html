@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors Priority Order</title>
+
+    <style>
+        div {
+            /* background-color: #ff07d2; */
+            width: 550px;
+            height: 500px;
+        }
+
+        #id {
+            background-color: rebeccapurple;
+        }
+
+        .class {
+            background-color: aqua;
+        }
+
+        #id:hover {
+            transform: translate(.1rem, -1rem) rotate(4deg);
+            transition: 1s;
+            border-radius: 300px;
+        }
+
+        h1::first-letter {
+            color: red;
+            font-size: 100px;
+        }
+
+        h1::after {
+            content: " This content is added using ::after selector in CSS";
+            color: #99ff00;
+        }
+
+        @keyframes headerSlide {
+            from {
+                transform: translateY(-100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            animation-name: headerSlide;
+            animation-duration: 3s;
+            ani
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Selectors</h1>
+    <div id="id" class="class"></div>
+</body>
+
+</html>

@@ -21,3 +21,9 @@ text-align: justify; { BOX Model 36 }
 display: grid;
 grid-template-column: {give number of column width};
 grid- templat- column: 100px 100px 100px 100px;
+
+transform: traslateY(100%);
+transition: 2s;
+
+transform: translate(.1rem, -1rem) rotate(4deg); { Trick for CSS}
+transition: 1s;
