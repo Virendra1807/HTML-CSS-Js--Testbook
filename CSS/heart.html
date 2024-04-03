@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart by using CSS</title>
+    <style>
+        /* body {
+            background-color: black;
+        }
+
+        .heart {
+            width: 300px;
+            height: 300px;
+            margin: 150px auto;
+            background-color: red;
+            transform: rotate(45deg);
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            border-top-left-radius: 20%;
+
+        } */
+
+        .heart {
+            width: 100px;
+            height: 90px;
+            position: relative;
+            transform: rotate(-45deg);
+            margin: 50px;
+        }
+
+        .heart:before,
+        .heart:after {
+            content: '';
+            width: 100px;
+            height: 100px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+        }
+
+        .heart:before {
+            left: 55px;
+            transform: translateX(-50%);
+        }
+
+        .heart:after {
+            left: 10px;
+            transform: translateX(50%);
+        }
+
+        .sq {
+            width: 80px;
+            height: 140px;
+            background-color: red;
+            margin-left: 20px;
+            margin-top: 100px;
+            transform: rotate(-45deg);
+            border-top-right-radius: 90px;
+            border-top-left-radius: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heart">
+        <div class="sq"></div>
+    </div>
+</body>
+
+</html>
