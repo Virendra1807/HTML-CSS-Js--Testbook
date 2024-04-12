@@ -7,38 +7,138 @@
     <title>Position property in CSS</title>
     <style>
         body {
-            color: #ffffff;
+            /* color: #ffffff; */
             background-color: #212121;
         }
 
-        *{
-            margin: 0;
-            padding: 0;
+        h1{
+            color: aliceblue;
         }
 
-        p {
-            display: inline;
-            padding: 5px;
-            /* background-color: aqua;   */
+
+        .first{
+            background-color: antiquewhite;
+            height: 200px;
+            width: 200px;
+            position: static;
+            top: 50px; /* NO effect bcoz it is static position  */
         }
 
-        .position{
-            width: 100px;
+        .first > div{
+            background-color: aquamarine;
             height: 100px;
-            background-color: rgb(179, 0, 255);
-            background-image: linear-gradient(45deg, red 50%,  green 50%);
+            width: 100px;
+            /* position: static; */
+            position: inherit;
+            top: 20px;
+        }
+
+        .second{
+            margin-top: 50px;
+            background-color: rgb(255, 145, 0);
+            height: 200px;
+            width: 200px;
             position: relative;
-            left: 50%;
-            top: 40px;
+            top: 5px;
+        }
+
+        .second > div{
+            background-color: rgb(242, 0, 255);
+            height: 100px;
+            width: 100px;
+            position: relative;
+            top: 50px;
+        }
+
+        .third{
+            margin-top: 50px;
+            background-color: rgb(255, 145, 0);
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 10px;
+            left: 300px;
+        }
+
+        .third > div{
+            background-color: rgb(242, 0, 255);
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 20px;
+            left: 120px;
+        }
+
+        .fourth{
+            margin-top: 50px;
+            background-color: rgb(255, 145, 0);
+            height: 200px;
+            width: 200px;
+            position: fixed;
+            top: 250px;
+            left: 300px;
+        }
+
+        .fourth > div{
+            background-color: rgb(242, 0, 255);
+            height: 100px;
+            width: 100px;
+            /* position: fixed; */
+        }
+
+        .fifth{
+            margin-top: 50px;
+            background-color: rgb(255, 145, 0);
+            height: 200px;
+            width: 200px;
+            position: sticky;
+            top: 50px;
+        }
+
+        .fifth > div{
+            background-color: rgb(242, 0, 255);
+            height: 100px;
+            width: 100px;
+            /* position: fixed; */
+        }
+
+        .randomContent{
+            width: 500px;
+            height: 500px;
+            background-color: rebeccapurple;
         }
     </style>
 </head>
 
 <body>
     <h1>Position Property in CSS</h1>
-    <div class="position">
-        <p>hello</p>
+    <div class="first">
+        <div>Static</div>
     </div>
+
+    <div class="second">
+        <div>Relative</div>
+    </div>
+
+    <div class="third">
+        <div>Absolute</div>
+    </div>
+
+    <div class="fourth">
+        <div>Fixed</div>
+    </div>
+
+    <div class="fifth">
+        <div>Sticky</div>
+        <p>Sticks the block on specific valueb</p>
+    </div>
+
+
+    <div class="randomContent"><p>ksd</p></div>
+    <div class="randomContent"><p>sdf</p></div>
+    <div class="randomContent"><p>sdf</p></div>
+    <div class="randomContent"><p>zcsd</p></div>
+    <div class="randomContent"><p>sdfs</p></div>
 </body>
 
 </html>
