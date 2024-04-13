@@ -2,3 +2,16 @@ body{
     background-color: rgb(241, 194, 231);
     
 }
+
+.first{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    text-indent: 1cm;
+    text-align: justify;
+}
+
+.second{
+    margin-top: 50px;
+    background-color: aquamarine;
+}
