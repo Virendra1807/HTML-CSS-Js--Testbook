@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+.container{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(5,50%);
+    grid-gap: 5px;
+    grid-template-areas: 
+        "head head head" 
+        "lf lf rg"
+        "lf lf rg"
+        "lf lf rg"
+        "lf lf rg"
+        "lf lf rg"
+        "lf lf rg"
+        "lf lf rg"
+
+    ;
+}
+
+.item{
+    padding: 20px;
+    border: solid 2px blue;
+    background-color: rgb(230, 179, 255);
+}
+
+.item1{
+    grid-area: head;
+    /* height: 10px; */
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+}
+
+.item3{
+    grid-area: rg;
+}
+
+.item2{
+    grid-area: lf;
+}
+
+#head{
+    /* height: 10px; */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1" id="head">1 grid Head</div>
+        <div class="item item2">2 grid main-content</div>
+        <div class="item item3">3 grid side-section</div>
+        <div class="item item4">4 grid content</div>
+        <div class="item item5">5 grid content</div>
+        <div class="item item7">3 grid content</div>
+        <div class="item item6">4 grid content</div>
+        <div class="item item5">5 grid content</div>
+        <div class="item item5">5 grid content</div>
+      </div>
+</body>
+</html>
