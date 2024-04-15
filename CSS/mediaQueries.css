@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(250, 46, 250);
+}
+
+@media only screen and (max-width: 720px) {
+
+    .container{
+        flex-direction: column;
+    }
+
+    body{
+        background-color: aqua;
+    }
+
+    .container .box{
+        width: 400px;
+        height: 400px;
+        background-color: rgb(26, 255, 0);
+    }
+}
+
+.container{
+    display: flex;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 0, 0);
+    padding: 5px;
+    margin: 10px;
+    border-radius: 50px;
+}
