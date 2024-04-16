@@ -23,7 +23,6 @@ body{
 }
 
 .container:hover > .box{
-
     /* animation: round 3s linear infinite alternate forwards; */
     animation-play-state: paused;
 }
@@ -35,8 +34,7 @@ body{
 
     25%{
         transform: translateY(500%);
-        /* background-color: red; */
-    }
+       }
 
     50%{
         transform: translateX(500%) translateY(500%);
