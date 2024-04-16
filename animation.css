@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: rgb(253, 113, 255);
+}
+
+.container{
+    width: 600px;
+    height: 600px;
+    background-color: rgb(154, 46, 255);
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(101, 255, 101);
+    /* transition: all linear 2s; */
+    animation: round 3s linear infinite normal forwards;
+}
+
+.container:hover > .box{
+
+    /* animation: round 3s linear infinite alternate forwards; */
+    animation-play-state: paused;
+}
+
+@keyframes round {
+    0%{
+        transform: translateX(0%);
+    }
+
+    25%{
+        transform: translateY(500%);
+        /* background-color: red; */
+    }
+
+    50%{
+        transform: translateX(500%) translateY(500%);
+    }
+
+    75%{
+        transform: translateX(500%) translateY(0%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+h1{
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 4px 6px 5px rgb(42, 42, 42);
+}
