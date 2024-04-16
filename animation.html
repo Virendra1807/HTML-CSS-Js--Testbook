@@ -9,12 +9,19 @@
 </head>
 <body>
     <h1 id="demo" onclick="myFun()">Click Me ! </h1>
+    <div class="main">
     <div class="container">
         <div class="box"></div>
     </div>
-
-
-        
+    
+    <div class="container2">
+        <div class="box2" id="box1">Linear</div>
+        <div class="box2" id="box2">Ease</div>
+        <div class="box2" id="box3">Ease-in</div>
+        <div class="box2" id="box4">Ease-out</div>
+        <div class="box2" id="box5">Ease-in-out</div>
+    </div>
+    </div>
     <script>
         function myFun(){
             document.getElementById("demo").innerHTML = "Hover on Purple area to stop the green box";
