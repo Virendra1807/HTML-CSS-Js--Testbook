@@ -1,0 +1,45 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: rgb(198, 151, 246);
+}
+
+.change-text{
+    margin: 150px auto;
+    width: 50px;
+    height: 500px;
+}
+
+.change-text > h1{
+    text-align: center;
+    line-height: 50px;
+}
+
+.change-text > h1::after{
+    content: "!";
+    color: red;
+}
+
+.change-text span::before{
+    content: "Lifestyle";
+    background-color: rgb(127, 255, 131);
+    padding: 10px;
+    animation: change 3s linear  infinite alternate forwards;
+    transition: 1s;
+}
+
+@keyframes change{
+    0%{
+        content: "Lifestyle";
+    }
+    50%{
+        content: "Work";
+        background-color: #6e97ff;
+    }
+    100%{
+        content: "Everything";
+        background-color: rgb(241, 85, 85);
+    }
+}
