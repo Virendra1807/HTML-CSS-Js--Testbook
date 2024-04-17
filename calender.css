@@ -47,5 +47,22 @@ body{
     justify-content: center;
     padding: 10px;
     margin: 10px 0;
+    transition: 2s;
+}
+
+.calender-container > footer{
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.dates-container .dates:hover{
+    color: rgb(255, 3, 3);
+    /* font-size: 30px; */
+    border: 1px dashed rebeccapurple;
+    border-radius: 50%;
+    cursor: pointer;   
 }
 
