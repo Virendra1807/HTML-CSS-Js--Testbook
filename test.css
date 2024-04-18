@@ -1,6 +1,6 @@
 body{
     background-color: rgb(241, 194, 231);
-    
+    box-sizing: border-box;
 }
 
 .first{
@@ -41,4 +41,31 @@ body{
 
 .item4{
     grid-area: right;
+}
+
+.float-test{
+    background-color: rgb(75, 255, 9);
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    padding: 50px;
+    border-radius: 50%;
+    
+}
+
+.float-test .box1, .box2{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 50%;
+    margin: 30px 20%;
+}
+
+.float-test .box1{
+    float: right !important;
+}
+
+.float-test .box2{
+    float: left;
 }
