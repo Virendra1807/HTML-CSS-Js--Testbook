@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+</head>
+<style>
+    label + input{
+        padding: 5px;
+        width: 200px;
+        margin: 10px;
+    }
+
+    .btn{
+        margin: 10px 30px;
+    }
+</style>
+<body>
+    <h1>Form Events in javascript</h1>
+    <div>
+        <form action="" method="get" autocomplete="on">
+            <label for="">Name : </label>
+            <input type="text" name="" id="" autofocus><br>
+            <label for="">Phone : </label>
+            <input type="tel" name="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id=""><br>
+            <label for="">Email : </label>
+            <input type="email" name="" id=""><br>
+            <input class="btn" type="reset">
+            <input class="btn" type="submit">
+        </form>
+
+        <h1 id="text"></h1>
+        <h1 id="text2"></h1>
+    </div>
+
+    <script>
+        document.body.onsubmit =() =>{
+            alert("Form is submitted");
+        }
+
+        document.body.onblur =() =>{
+            document.getElementById('text').innerHTML = "Focus is away from form";
+        }
+
+        document.body.onchange =() =>{
+            document.getElementById('text2').innerHTML = "Form details are changed";
+        }
+        
+    </script>
+</body>
+</html>
