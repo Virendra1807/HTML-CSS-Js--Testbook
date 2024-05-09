@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Events</title>
+</head>
+<body onresize="document.body.style.backgroundColor = 'red'">
+    <h1>Try to resize page, I have added onresize Event on this page.</h1>
+    Name :
+    <input type="text" name="" id="box">
+    <br>
+    <h3 id="text"></h3>
+
+    <script>
+        
+        document.body.onload = ()=>{
+            alert("Document is loaded");
+        }
+
+        document.body.onunload = ()=>{
+            alert("Document is unloaded");
+        }
+
+        let i =0;
+        document.getElementById('box').onfocus = ()=> {
+            i++;
+            document.getElementById('text').innerHTML = "Input box is now in focus : " + i;
+        }
+
+
+
+    </script>
+</body>
+</html>
