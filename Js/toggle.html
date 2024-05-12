@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle</title>
+</head>
+
+<body>
+    <!-- <p>Open the details.</p>
+
+    <details ontoggle="alert('Toggle event ')">
+        <summary>Copyright 1999-2014.</summary>
+        <p> - by Refsnes Data. All Rights Reserved.</p>
+        <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+    </details> -->
+
+    <p id="para">Hello World :</p>
+    <button id="togglebutton">Toggle</button>
+
+
+    <script type="text/javascript">
+        document.getElementById('togglebutton').addEventListener('click', function(){
+            var textElement = document.getElementById('para');
+
+            if(textElement.style.display === 'none'){
+                textElement.style.display = 'block';
+            }
+            else{
+                textElement.style.display = 'none';
+            }
+        }); 
+    </script>
+</body>
+
+</html>

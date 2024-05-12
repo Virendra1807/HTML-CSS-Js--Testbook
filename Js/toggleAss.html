@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="para">Julie</p>
+    <button id="togglebutton">Match</button>
+
+
+    <script type="text/javascript">
+        document.getElementById('togglebutton').addEventListener('click', function(){
+            var textElement = document.getElementById('para');
+
+            if(textElement.innerHTML == "Julie"){
+                textElement.innerHTML = "Gladden";
+            }
+            else{
+                textElement.innerHTML = 'Julie';
+            }
+        }); 
+    </script>
+</body>
+</html>
