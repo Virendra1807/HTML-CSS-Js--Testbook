@@ -1,6 +1,5 @@
 
-const arr = [10,25,3,40,50];
-
+const arr = [1,2,3,4,5];
 console.log(arr.length);
 
 arr.push(60);// Add element at last position
@@ -19,6 +18,11 @@ console.log(addReturn);
 
 let sum = arr.reduce((sum, i)=> sum+i);
 console.log(sum);
+
+let mulAll = arr.reduce(function(accumulator, currValue){
+    return accumulator * currValue;
+}, 1);// 1 is assigned to accumulator
+console.log(mulAll);
 
 let filterMul = arr.filter((i)=> i%2!=0);
 console.log(filterMul);
