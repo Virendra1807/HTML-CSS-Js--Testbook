@@ -11,8 +11,10 @@ function fetchFunction(){
             return response.json();
         })
         .then((data) =>{
-            content.innerHTML =  `<img scr= '${data.message}' alt='dog-image' />`;
+            content.innerHTML =  `<img scr= '${data.message}'>`;
             console.log(data.message);
+
+            // content.appendChild(img);
             // console.log(data.success);
         })
 
