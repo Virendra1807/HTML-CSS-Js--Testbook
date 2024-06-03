@@ -1,20 +1,22 @@
 
 const fetchBtn = document.getElementById('fetchBtn');
 const content = document.getElementById('content');
-
+const imgSrc = document.getElementsByTagName('img');
 fetchBtn.addEventListener('click', fetchFunction);
 
 function fetchFunction(){
 
     fetch('https://dog.ceo/api/breeds/image/random')
         .then((response) =>{
+            // console.log(response.json());
             return response.json();
         })
         .then((data) =>{
-            content.innerHTML =  `<img scr= '${data.message}'>`;
+            imgSrc.src = `${data.message}`;
+            // content.innerHTML =  "<img scr= '"+ data.message +"'/>";
             console.log(data.message);
 
-            // content.appendChild(img);
+            // content.appendChild('img');
             // console.log(data.success);
         })
 
