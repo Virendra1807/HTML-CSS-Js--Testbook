@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XmlHttpRequest</title>
+    <style>
+        body {
+            background-color: black;
+            color: aliceblue;
+            display: flex;
+            height: 95vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="info">
+        Hello
+    </div>
+
+</body>
+
+<script>
+    const info = document.getElementById('info');
+    const reqUrl = 'https://api.github.com/users/virendra1807';
+
+    const xhr = new XMLHttpRequest();
+
+    xhr.open('GET', reqUrl);
+
+    xhr.onreadystatechange = () => {
+        console.log(xhr.readyState);
+
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(xhr.responseText);
+            console.log(data.avatar_url);
+
+            info.innerHTML = `
+            <h1> Fetching image using Github API </h1>
+            <img src='${data.avatar_url} alt='profile' />
+            `;
+
+            console.log("Hello");
+        }
+
+    }
+
+
+
+    // Sending req
+    xhr.send();
+
+</script>
+
+</html>
