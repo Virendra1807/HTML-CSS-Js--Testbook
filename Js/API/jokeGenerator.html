@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokes Generator</title>
+    <style>
+        body{
+            font-size: 30px;
+            text-align: center;
+            background-color: black;
+            color: aliceblue;
+        }
+        button{
+            cursor: pointer;
+            width: 130px;
+            height: 40px;
+            background-color: rgb(31, 181, 68);
+            border: none;
+            margin: 40px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <button id="generateJoke">Generate a Joke</button>
+    <div id="displayJokes">Click the button to generate a joke</div>
+
+    <script>
+        const generateJokeBtn = document.getElementById('generateJoke');
+        const displayJokes = document.querySelector("#displayJokes");
+        const reqURL = 'https://official-joke-api.appspot.com/random_joke';
+
+        generateJokeBtn.addEventListener('click', generateJoke);
+
+        function generateJoke(){
+            fetch(reqURL)
+            .then((response)=>{
+                return response.json();
+            })
+            .then((data)=>{
+                console.log('Hello');
+                console.log(data);
+                displayJokes.innerHTML =`
+                    <h3>👻 : ${data.setup}</h3>
+                    <h3>🤦‍♀️ : ${data.punchline}</h3>
+                `;
+            })
+            .catch((error)=>{
+                console.log('E : '+ error);
+            })
+        }
+
+    </script>
+</body>
+</html>
