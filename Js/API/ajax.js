@@ -1,7 +1,7 @@
 
 const fetchBtn = document.getElementById('fetchBtn');
 const content = document.getElementById('content');
-const imgSrc = document.getElementsByTagName('img');
+
 fetchBtn.addEventListener('click', fetchFunction);
 
 function fetchFunction(){
@@ -12,12 +12,12 @@ function fetchFunction(){
             return response.json();
         })
         .then((data) =>{
-            imgSrc.src = `${data.message}`;
-            // content.innerHTML =  "<img scr= '"+ data.message +"'/>";
-            console.log(data.message);
+            content.innerHTML = `Hellosefsdf`; 
+            console.log(data);
 
-            // content.appendChild('img');
-            // console.log(data.success);
+            content.innerHTML =`
+                <img width='500' src='${data.message}' alt='dog-img' />
+            `;
         })
 
 }

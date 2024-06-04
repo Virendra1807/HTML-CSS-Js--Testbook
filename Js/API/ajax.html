@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <h1>API</h1>
+    <!-- Dog image generator using Api DogCEO -->
+    <h1>Dog image genrator using API</h1>
 
     <button id="fetchBtn">Fetch</button>
-    <p id="content">HEllo
-        <img src="#" alt="image">
+    <p id="content">
     </p>
     <script src="ajax.js"></script>
 </body>
