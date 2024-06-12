@@ -14,9 +14,57 @@ var car ={
     'Number': 3129
 }
 
-car.milege = '17kmpl';
-console.log(car);
-Object.seal(car);
-car.milege = '20kmpl';
-// car.number = 3129;
-console.log(car);
+// car.milege = '17kmpl';
+// console.log(car);
+// Object.seal(car);
+// car.milege = '20kmpl';
+// // car.number = 3129;
+// console.log(car);
+
+// Array.of  & Array.from
+const arr1 = Array.of('hLLO');
+console.log(arr1);
+
+// const obj1 = ;
+const arr2 = Array.from('DJSHD');
+console.log(arr2);
+
+
+
+
+
+
+// Binary numbers 
+// Obj freez and seal diff
+// Multi-dime array -- Methods of array
+// Execution Context
+// SetInterval 
+// Event-Loop   
+// diff betn methods and functioon
+// Distructuring Arr Obj
+// BOM DOM
+// get attribute and set Attribute
+// apendChild
+// CreateElement 
+// removeElement
+// // FormEvent and EventObj 
+// Event bubling And Event capturing
+// event simulation
+// localStorage
+// CallBack hell
+// Promises 
+// optional Chaining
+// OOps 
+// 
+
+
+
+//  ... 128 64 32 16 8 4 2 1                          
+// 4 -> 100
+// 64 -> 1000000
+// 12 -> 1100
+
+
+
+
+
