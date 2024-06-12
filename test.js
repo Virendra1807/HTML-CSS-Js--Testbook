@@ -22,12 +22,19 @@ var car ={
 // console.log(car);
 
 // Array.of  & Array.from
-const arr1 = Array.of('hLLO');
-console.log(arr1);
+// const arr1 = Array.of('hLLO');
+// console.log(arr1);
 
-// const obj1 = ;
-const arr2 = Array.from('DJSHD');
-console.log(arr2);
+// // const obj1 = ;
+// const arr2 = Array.from('DJSHD');
+// console.log(arr2);
+
+// Using flat() method
+const arr = [1,2,3,[1,2,[3,4,5,[6,7,8,9]]]];
+console.log(arr.flat()); // It will flat only one array present  inside array
+console.log(arr.flat(2)); // It will flat two arrays present inside array
+console.log(arr.flat(Infinity)); // It will flat all arrays present inside array
+
 
 
 
