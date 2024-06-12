@@ -30,11 +30,14 @@ var car ={
 // console.log(arr2);
 
 // Using flat() method
-const arr = [1,2,3,[1,2,[3,4,5,[6,7,8,9]]]];
-console.log(arr.flat()); // It will flat only one array present  inside array
-console.log(arr.flat(2)); // It will flat two arrays present inside array
-console.log(arr.flat(Infinity)); // It will flat all arrays present inside array
+// const arr = [1,2,3,[1,2,[3,4,5,[6,7,8,9]]]];
+// console.log(arr.flat()); // It will flat only one array present  inside array
+// console.log(arr.flat(2)); // It will flat two arrays present inside array
+// console.log(arr.flat(Infinity)); // It will flat all arrays present inside array
 
+// Using at() we can access arrray in reverse order by giving -ve index
+const arr2 = [10,20,30,40,50,60,70,80];
+console.log(arr2.at(0));
 
 
 
