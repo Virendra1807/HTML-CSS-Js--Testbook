@@ -129,21 +129,45 @@ const user = {
     age : 23
 };
 
-//Creating a property
-user.city = 'Mumbai';
-console.log(user);
+const custo = {
+    lname : "mali"
+};
 
-// Updating Property
-user.fname = "Viraj"
-console.log(user.fname);
+console.log(Object.keys(custo).length);
 
-//Reading Property
-console.log(user.age + user['city']);
+// Merge two Objects
+// const newObj = Object.assign({}, user, custo);
+// const newObj2 = {...user, ...custo, 2: 'tWO'};
+// console.log(newObj2);
 
-//Deleting Property
-delete user.age;
-delete user['fname']
-console.log(user);
+// //Creating a property
+// user.city = 'Mumbai';
+// console.log(user);
+
+// // Updating Property
+// user.fname = "Viraj"
+// console.log(user.fname);
+
+// //Reading Property
+// console.log(user.age + user['city']);
+
+// //Deleting Property
+// delete user.age;
+// delete user['fname']
+// console.log(user);
+
+// user.greeting = ()=>{
+//     return 'Hello from obj';
+// }
+
+// console.log(user.greeting());
+
+//React syntax 
+// const navBar = (cc)=>{
+//     console.log(cc);
+// }
+// navBar(Com ="Viren");
+
 
 
 
