@@ -36,8 +36,8 @@ var car ={
 // console.log(arr.flat(Infinity)); // It will flat all arrays present inside array
 
 // Using at() we can access arrray in reverse order by giving -ve index
-const arr2 = [10,20,30,40,50,60,70,80];
-console.log(arr2.at(0));
+// const arr2 = [10,20,30,40,50,60,70,80];
+// console.log(arr2.at(0));
 
 
 
@@ -74,6 +74,11 @@ console.log(arr2.at(0));
 // 64 -> 1000000
 // 12 -> 1100
 
+
+const nm = 'Viren';
+for(i in nm){
+    console.log(i);
+}
 
 
 
