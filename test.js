@@ -75,11 +75,75 @@ var car ={
 // 12 -> 1100
 
 
-const nm = 'Viren';
-for(i in nm){
-    console.log(i);
-}
+// const nm = '  Viren  ';
+// for(i in nm){
+//     console.log(i);
+// }
 
+// const ag = ' suji ';
+// console.log(nm.trimEnd());
+// console.log(ag.trim());
+
+// const time = "9";
+// console.log(time.padStart(5, '0'));
+
+// Swap key and values of object
+// function swapKeysValues(obj) {
+//     const swappedObj = {};
+    
+//     for (const key in obj) {
+//       console.log(key +" : " + obj[key]);
+
+//       swappedObj[obj[key]] = key;
+//     }
+    
+//     return swappedObj;
+//   }
+  
+//   const originalObject = {
+//     name: "John",
+//     age: 30,
+//     city: "New York",
+//   };
+
+//   console.log(originalObject.hasOwnProperty('name'));
+  
+//   const swappedObject = swapKeysValues(originalObject);
+//   console.log(swappedObject);
+
+// const swapObj = {};
+// for( key in originalObject){
+//     swapObj[originalObject[key]] = key;
+// }
+
+// console.log(swapObj);
+
+
+// const arr = [10,20,30];
+// arr[100] = 199;
+// console.log(arr.length);
+// console.log(arr);
+
+const user = {
+    fname : 'viren',
+    age : 23
+};
+
+//Creating a property
+user.city = 'Mumbai';
+console.log(user);
+
+// Updating Property
+user.fname = "Viraj"
+console.log(user.fname);
+
+//Reading Property
+console.log(user.age + user['city']);
+
+//Deleting Property
+delete user.age;
+delete user['fname']
+console.log(user);
 
 
 
