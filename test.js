@@ -136,25 +136,25 @@ const custo = {
 console.log(Object.keys(custo).length);
 
 // Merge two Objects
-// const newObj = Object.assign({}, user, custo);
-// const newObj2 = {...user, ...custo, 2: 'tWO'};
-// console.log(newObj2);
+const newObj = Object.assign({}, user, custo);
+const newObj2 = {...user, ...custo, 2: 'tWO'};
+console.log(newObj2);
 
-// //Creating a property
-// user.city = 'Mumbai';
-// console.log(user);
+//Creating a property
+user.city = 'Mumbai';
+console.log(user);
 
-// // Updating Property
-// user.fname = "Viraj"
-// console.log(user.fname);
+// Updating Property
+user.fname = "Viraj"
+console.log(user.fname);
 
-// //Reading Property
-// console.log(user.age + user['city']);
+//Reading Property
+console.log(user.age + user['city']);
 
-// //Deleting Property
-// delete user.age;
-// delete user['fname']
-// console.log(user);
+//Deleting Property
+delete user.age;
+delete user['fname']
+console.log(user);
 
 // user.greeting = ()=>{
 //     return 'Hello from obj';
