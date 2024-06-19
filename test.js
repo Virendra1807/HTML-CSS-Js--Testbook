@@ -6,13 +6,13 @@
 
 // automatically Addded this file while pulling JS code from GitHub
 
-var car ={
-    'name': 'Hyundai Creta',
-    'milege': 19,
-    'price': 1800000,
-    'wheels': 4,
-    'Number': 3129
-}
+// var car = {
+//     'name': 'Hyundai Creta',
+//     'milege': 19,
+//     'price': 1800000,
+//     'wheels': 4,
+//     'Number': 3129
+// }
 
 // car.milege = '17kmpl';
 // console.log(car);
@@ -90,16 +90,16 @@ var car ={
 // Swap key and values of object
 // function swapKeysValues(obj) {
 //     const swappedObj = {};
-    
+
 //     for (const key in obj) {
 //       console.log(key +" : " + obj[key]);
 
 //       swappedObj[obj[key]] = key;
 //     }
-    
+
 //     return swappedObj;
 //   }
-  
+
 //   const originalObject = {
 //     name: "John",
 //     age: 30,
@@ -107,7 +107,7 @@ var car ={
 //   };
 
 //   console.log(originalObject.hasOwnProperty('name'));
-  
+
 //   const swappedObject = swapKeysValues(originalObject);
 //   console.log(swappedObject);
 
@@ -124,37 +124,37 @@ var car ={
 // console.log(arr.length);
 // console.log(arr);
 
-const user = {
-    fname : 'viren',
-    age : 23
-};
+// const user = {
+//     fname: 'viren',
+//     age: 23
+// };
 
-const custo = {
-    lname : "mali"
-};
+// const custo = {
+//     lname: "mali"
+// };
 
-console.log(Object.keys(custo).length);
+// console.log(Object.keys(custo).length);
 
-// Merge two Objects
-const newObj = Object.assign({}, user, custo);
-const newObj2 = {...user, ...custo, 2: 'tWO'};
-console.log(newObj2);
+// // Merge two Objects
+// const newObj = Object.assign({}, user, custo);
+// const newObj2 = { ...user, ...custo, 2: 'tWO' };
+// console.log(newObj2);
 
-//Creating a property
-user.city = 'Mumbai';
-console.log(user);
+// //Creating a property
+// user.city = 'Mumbai';
+// console.log(user);
 
-// Updating Property
-user.fname = "Viraj"
-console.log(user.fname);
+// // Updating Property
+// user.fname = "Viraj"
+// console.log(user.fname);
 
-//Reading Property
-console.log(user.age + user['city']);
+// //Reading Property
+// console.log(user.age + user['city']);
 
-//Deleting Property
-delete user.age;
-delete user['fname']
-console.log(user);
+// //Deleting Property
+// delete user.age;
+// delete user['fname']
+// console.log(user);
 
 // user.greeting = ()=>{
 //     return 'Hello from obj';
@@ -170,7 +170,7 @@ console.log(user);
 
 // String Manipulation
 
-let str = new String("H,e,l,l,o");
+// let str = new String("H,e,l,l,o");
 // console.log();
 // console.log(str);
 
@@ -191,12 +191,27 @@ let str = new String("H,e,l,l,o");
 
 // console.log(typeof str4);
 
-let num = new Number(20565572);
-console.log(num.toFixed(1));
-console.log(num.toLocaleString('en-US'));
-console.log(num.toPrecision(5));
+// let num = new Number(20565572);
+// console.log(num.toFixed(1));
+// console.log(num.toLocaleString('en-US'));
+// console.log(num.toPrecision(5));
 
-let bigInt = 456841458556895896464678n;
-console.log(typeof bigInt);
+// let bigInt = 456841458556895896464678n;
+// console.log(typeof bigInt);
+
+let obj = {
+    nm: 'Viren',
+    age: 23
+}
+
+let obj2 = Object.assign(obj, {color : 'pink'});
+
+// console.log(Object.keys(obj2));
+
+// console.log(Object.values(obj2));
+
+console.log(Object.entries(obj2));
+console.log(Object.keys(obj2).length);
+
 
 
