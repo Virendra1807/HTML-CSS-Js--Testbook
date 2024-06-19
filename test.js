@@ -168,6 +168,35 @@ console.log(user);
 // }
 // navBar(Com ="Viren");
 
+// String Manipulation
 
+let str = new String("H,e,l,l,o");
+// console.log();
+// console.log(str);
+
+// console.log(str.charAt(str.length - 1));
+// console.log(str[str.length - 1]);
+// console.log(str.valueOf());
+
+// console.log(str2.join());
+
+// console.log(str.at(-4));
+
+// let str3  = Symbol('Hello');
+
+// let str2  = str.slice(0, 3);
+// console.log(str);
+
+// let str4 = Symbol('Hello');
+
+// console.log(typeof str4);
+
+let num = new Number(20565572);
+console.log(num.toFixed(1));
+console.log(num.toLocaleString('en-US'));
+console.log(num.toPrecision(5));
+
+let bigInt = 456841458556895896464678n;
+console.log(typeof bigInt);
 
 
