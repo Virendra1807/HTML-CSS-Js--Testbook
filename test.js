@@ -199,19 +199,26 @@
 // let bigInt = 456841458556895896464678n;
 // console.log(typeof bigInt);
 
-let obj = {
-    nm: 'Viren',
-    age: 23
-}
+// let obj = {
+//     nm: 'Viren',
+//     age: 23
+// }
 
-let obj2 = Object.assign(obj, {color : 'pink'});
+// let obj2 = Object.assign(obj, {color : 'pink'});
 
 // console.log(Object.keys(obj2));
 
 // console.log(Object.values(obj2));
 
-console.log(Object.entries(obj2));
-console.log(Object.keys(obj2).length);
+// console.log(Object.entries(obj2));
+// console.log(Object.keys(obj2).length);
+
+document.body.style.margin = "0px";
+const multiSelector = document.querySelectorAll(".myClass");
+const para = document.querySelector(".para");
+
+// multiSelector[1].innerHTML = "<h1>Hello change</h1>";
 
 
-
+let content = para.inner;
+multiSelector[0].textContent = content;
