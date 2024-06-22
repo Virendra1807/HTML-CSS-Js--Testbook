@@ -213,12 +213,147 @@
 // console.log(Object.entries(obj2));
 // console.log(Object.keys(obj2).length);
 
-document.body.style.margin = "0px";
-const multiSelector = document.querySelectorAll(".myClass");
-const para = document.querySelector(".para");
+// document.body.style.margin = "0px";
+// const multiSelector = document.querySelectorAll(".myClass");
+// const para = document.querySelector(".para");
 
 // multiSelector[1].innerHTML = "<h1>Hello change</h1>";
 
+// const title = document.getElementById('title');
+// const btn = document.createElement('button');
+// btn.innerHTML = 'Toggle Btn';
+// title.appendChild(btn);
 
-let content = para.inner;
-multiSelector[0].textContent = content;
+// btn.addEventListener('click', function(){
+//     document.getElementById('title').classList.toggle('title');
+// });
+
+// function toggleEx(){
+//     document.getElementById('title').classList.toggle('title');
+// }
+
+
+// let content = para.inner;
+// multiSelector[0].textContent = content;
+
+// const car = {
+//     nm: 'TATA',
+//     pr: 2800000
+// }
+
+// for (key in car) {
+//     console.log(car[key]);
+// }
+
+// CallBack Hell // ///
+// function getData(id, getNextData) {
+//     setTimeout(() => {
+//         console.log(`Data : ${id}`)
+//         console.log("Function Paass : " + getNextData);
+//         if(getNextData) {
+//             getNextData();
+//         }
+//     }, 2000);
+// }
+
+// getData(1, () => {
+//     console.log('Fetching data 2');
+//     getData(2, () => {
+//         console.log('Fetching data 3');
+//         getData(3, () => {
+//             console.log('Fetching data 4');
+//             getData(4);
+//         });
+//     });
+// });
+
+
+// // // Promise in Js Shradha Khapra JS-Playlist-12 video
+// function getInfo1(id) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             if (id) {
+//                 console.log(`Student Id : ${id}`);
+//                 resolve("Successfully Execute");
+//             } else {
+//                 console.log("Rejected");
+//                 reject("No student Id");
+//             }
+//         }, 2000);
+//     });
+// }
+
+// function getInfo2(id) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             if (id) {
+//                 console.log(`Student Id : ${id}`);
+//                 resolve("Successfully Execute");
+//             } else {
+//                 console.log("Rejected");
+//                 reject("No student Id");
+//             }
+//         }, 2000);
+//     });
+// }
+
+
+//// Promise Chaining 
+// getInfo1(235).then((res) => {
+//     console.log(res);
+//     getInfo2(236).then((res) => {
+//         console.log(res)
+//         getInfo1(237).then((res) => {
+//             console.log(res)
+//             getInfo2(238).then((res) => {
+//                 console.log(res)
+//             });
+//         });
+//     });
+// });
+
+
+// //// Promise Chaining 2
+// getInfo1(235)
+// .then((res) => {
+//     console.log(res);
+//     return getInfo1(236);
+// })
+// .then((res) => {
+//     console.log(res);
+//     return getInfo1(237);
+// })
+// .then((res) => {
+//     console.log(res);
+//     return getInfo1(238);
+// })
+// .then((res) => {
+//     console.log(res);
+// });
+
+
+
+// Async / Await
+
+
+function getData(id) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log(`Student : ${id}`)
+            resolve("Success")
+        }, 2000);
+    })
+
+}
+
+// Here we use IIFE - Immediately invoked function Expresion
+(async function getAllData() {
+    await getData(235);
+    await getData(236);
+    await getData(237);
+    await getData(238);
+})();
+
+
+// getAllData();
+
