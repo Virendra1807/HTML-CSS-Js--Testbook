@@ -339,8 +339,11 @@
 function getData(id) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            console.log(`Student : ${id}`)
-            resolve("Success")
+            if (id) {
+                console.log(`Student : ${id}`);
+                resolve("Success");
+            }
+            reject("failed to fetch");
         }, 2000);
     })
 
@@ -348,10 +351,14 @@ function getData(id) {
 
 // Here we use IIFE - Immediately invoked function Expresion
 (async function getAllData() {
-    await getData(235);
-    await getData(236);
-    await getData(237);
-    await getData(238);
+    try {
+        await getData(235);
+        await getData(236);
+        await getData(238);
+        await getData();
+    } catch (err) {
+        console.log(err);
+    }
 })();
 
 
