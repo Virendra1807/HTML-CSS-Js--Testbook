@@ -15,6 +15,10 @@
         <input type="text">
         <br>
         <input type="submit" value="Submit" id="formSubmit">
+
+
+        <button id="btn">Hey</button>
+
     </form>
 
     <script>
@@ -22,6 +26,10 @@
             alert("Submitted !");
         });
 
+
+        document.getElementById("btn").addEventListener('click', ()=>{
+            alert("Clicked on Hey Button");
+        })
     </script>
 </body>
 </html>
