@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            margin: 50px;
+        }
+
+        .form{
+            border: 2px solid black;
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            border-radius: 20px;
+            padding: 50px;
+
+        }
+    </style>
+</head>
+<body>
+<!--     
+    <a href="https://www.gooogle.com" target="_blank" title="GooglePage">Google</a>
+
+    <ul type="square">
+        <li>Milk</li>
+        <li>Water</li>
+        <li>Sugar</li>
+    </ul>
+
+    <ol type="I" reversed >
+        <li>Milk</li>
+        <li>Water</li>
+        <li>Sugar</li>
+    </ol>
+
+    <dl style=" background-color: rgb(187, 241, 187);">
+        <dt>Milk</dt>
+        <dd>Hot or Cold</dd>
+        <dt>Coffee</dt>
+        <dd>Hot or Cold </dd>
+    </dl>
+
+    <img
+      src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?cs=srgb&dl=pexels-william-choquette-1954524.jpg&fm=jpg"
+      alt="failed to load"
+      title="Cardio Machine"
+      width="50%"
+      height="50%"
+    />
+
+    <video src="TestBook Video.mp4" 
+        height="50%" width="50%" controls autoplay muted
+    >Your browser not supporting this Video</video>
+
+    <audio style="display: block;"
+     src="All You Are.mp3" 
+     title="HoverAndSeeTitle"
+     controls
+     
+     >Your browser not supporting this Audio</audio>
+
+     <iframe style="background-color: aquamarine;"
+      src="HeaderFooter.html" 
+     frameborder="0"
+     width="80%"
+     height=""></iframe>
+
+
+    <table border="2px" cellspacing="5" cellpadding="5">
+        <caption>Students Data</caption> 
+        <tr>
+            <th colspan="2">Name</th>
+            <th rowspan="3">City</th>
+        </tr>
+
+        <tr>
+            <td>Viren</td>
+            <td>Mumbai</td>
+        </tr>
+
+        <tr>
+            <td >total</td>
+            <td>2000</td>
+        </tr>
+    </table> -->
+
+    <div class="form">
+        <h1>Form</h1>
+
+        <form action="" autocapitalize="on" autocomplete="off" novalidate>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Fill your Name" required autocapitalize="on" autofocus>
+            <br>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+
+            <br>
+            <input type="checkbox" name="DB">DB
+            <input type="checkbox" name="java">Java
+            <input type="checkbox" name="C" >C
+            <br>
+            <input type="date" max="2024-12-20" min="2024-12-10">
+            <br>
+
+            <label for="password">password</label>
+            <input type="password" placeholder="Set Pass" name="password" id="password">
+            <br>
+            <br>    
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+            <br>
+            <label for="Volume">Volume</label>
+            <input style="accent-color: red;" type="range" max="10" min="0" step="2" value="2">
+            
+            <br>
+        </form>
+    </div>
+
+     
+
+</body>
+</html>
