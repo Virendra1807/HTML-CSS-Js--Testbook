@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive NavBar</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        .container{
+             background-color: aqua;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 3rem;
+        }
+
+        .container > .logo{
+            margin-left: 1.4rem;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            font-weight: 800;
+        }
+
+        .container > .nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .container > .nav > a:last-child{
+            margin-right: 2rem;
+
+        }
+
+        .container > .nav > a{
+            text-decoration: none;
+            font-size: 1.4rem;
+            color: rgb(4, 4, 4);
+            font-family: sans-serif;
+            font-weight: 400;
+        }
+
+        .cart > h3{
+            font-family: sans-serif;
+            text-transform: uppercase;
+            margin-right: 2rem;
+            font-weight: 800;
+        }
+
+        .container > .nav > a:hover{
+            font-size: 1.5rem;
+            color: rgb(169, 192, 192);
+            transition: 1s;
+        }
+
+        #dropdown{
+            border: 0;
+            background-color: transparent;
+            font-family: sans-serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            cursor: pointer;
+        }
+
+        @media (max-width:768px) {
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <div class="logo">
+            <h2>Viren</h2>
+        </div>
+
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <select name="" id="dropdown" >
+                <option value="d">Testimony</option>
+                <option value="1">Hello1</option>
+                <option value="1">Hello12</option>
+                <option value="1">Hello1df</option>
+                <option value="1">Hello1sfd</option>
+            </select>
+            <a href="#">About</a>
+        </div>
+
+        <div class="cart">
+                <h3>Shop</h3>
+        </div>
+    </div>
+
+</body>
+</html>
